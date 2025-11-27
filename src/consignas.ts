@@ -37,22 +37,24 @@ orderStatus = "shipped";
 
 console.log("El estado de la orden es: ", orderStatus);
 
-// enum 
+// enum
 enum logLevel {
-    info,
-    warn,
-    error,
+  info,
+  warn,
+  error,
 }
-// 
-function logMessage(Level:logLevel, message:string){
-    console.log(`[${logLevel[Level]}] - ${message}`);
+//
+function logMessage(Level: logLevel, message: string) {
+  console.log(`[${logLevel[Level]}] - ${message}`);
 }
 
-logMessage(logLevel.info, "Este es un mensaje de informacion posicionado en 0 el siguiente sera 1");
-
+logMessage(
+  logLevel.info,
+  "Este es un mensaje de informacion posicionado en 0 el siguiente sera 1"
+);
 
 // Glosario
 // investigacion  con Colman Maximo
 // Interface: Es una estructura que define la forma de un objeto, especificando las propiedades y sus tipos de datos.
 //enums: Son un tipo de dato especial en TypeScript que permite definir un conjunto de valores constantes con nombres legibles.
-// primero comenzaremos con enumeraciones numericas que probablemente resulten mas familiares 
+// primero comenzaremos con enumeraciones numericas que probablemente resulten mas familiares
